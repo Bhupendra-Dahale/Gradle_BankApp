@@ -1,0 +1,29 @@
+pipeline{
+    agent any
+    stages{
+        stage ('build'){
+            steps{
+            echo 'I am build Stage...............'
+            build 'BankApp'
+            }
+        }
+        stage ('test'){
+            steps{
+            echo 'I am in test Stage...............'
+            build 'BankApp_Gradle-job'
+            input 'do you want to continue'
+            }
+        }
+        stage ('staging'){
+            steps{
+            echo 'I am Staging...............'
+            }
+        }
+         stage ('release'){
+             steps{
+            echo 'I am Staging...............'
+             }
+        }
+    }
+   
+}
