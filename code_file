@@ -25,5 +25,17 @@ pipeline{
              }
         }
     }
+  
+    post{
+        always{
+        echo "build is succesful if it has all required data"
+        }
+        success{
+        echo "congratulations....!!"
+        }
+        failed{
+        echo "Oops...!!"
+        }
+       }
    
 }
