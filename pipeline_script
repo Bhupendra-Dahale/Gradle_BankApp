@@ -5,5 +5,5 @@ node{
   echo "this is post build action after second_job"
   build "third_job"
   echo "HEY END OF THE JOBS"
-  echo "sample.txt"
+  echo "cat sample.txt"
 }
