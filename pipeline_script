@@ -1,0 +1,7 @@
+node{
+  echo "this build is for bhushan bhau"
+  buid"second_job"
+  echo "this is post build action after second_job"
+  build"third_job"
+  echo "HEY END OF THE JOBS"
+}
